@@ -1,0 +1,135 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type:none ;
+    padding: 5rem;
+
+    
+}
+
+li a{
+    height: 22.5rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    overflow: hidden;
+    color: #e72929;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+li a img{
+    object-fit: cover;
+    height: 14.5rem;
+}
+.container{
+    margin-top: 0.3rem;
+    padding:0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+    /* background-color: hsl(180, 100%, 97%); */
+ 
+    
+}
+
+
+.favorite{
+    /* position: relative; */
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+.favorite.not{
+    color: gray;
+}
+.stars{
+    margin-bottom:0.2rem ;
+    /* justify-content: space-between;
+    align-items: flex-start; */
+}
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.origins{
+  flex: 9;  
+}
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+}
+.cook-time{
+   font-size:0.9rem;
+   flex: 3;
+   text-align: right;
+}
+.price{
+  position: relative;
+  bottom: 0;
+  left: 0.9rem;
+  background: white;
+  padding: 0.3rem 100% 0 0;
+  color: #414141;
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+}
+
+/* .banner{
+    height: 500px;
+    width: 98%;
+    margin-left: 30px;
+    margin-right:30px ;
+    border-radius: 10px;
+
+   background-image: url(/assets/banner/1.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100%  100%;
+   animation-name: myani;
+   animation-duration: 12s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   
+}
+
+.banner h1{
+    text-align: center;
+    padding: 16%;
+    color: hsl(210, 20%, 92%);
+    
+    
+    
+}
+.banner h4{
+  text-align: center;
+    padding: 16%;
+    color: hsl(210, 20%, 92%);
+    font-size: 100%
+}
+
+@keyframes myani{
+    0%{ background-image: url(/assets/banner/1.jpg);}
+    35%{ background-image: url(/assets/banner/2.jpg);}
+    75%{ background-image: url(/assets/banner/3.jpg);}
+    slide-in{
+transform: translateX(-100%);
+opacity: 0.25;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+} */
