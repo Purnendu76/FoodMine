@@ -6,11 +6,13 @@ import { CartPageComponent } from './component/pages/cart-page/cart-page.compone
 import { LoginPageComponent } from './component/pages/login-page/login-page.component';
 import { ReginsterPageComponent } from './component/pages/reginster-page/reginster-page.component';
 import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
+import { authGuard } from './auth/gurds/auth.guard';
 
 const routes: Routes = [
   {
     path:'',
-    component:HomeComponent
+    component:HomeComponent,
+    canActivate:[authGuard]
     
   },
   {
@@ -39,7 +41,8 @@ const routes: Routes = [
   },
   {
     path:'checkout',
-    component:CheckoutPageComponent
+    component:CheckoutPageComponent,
+    // canActivate:[authGuard]
   }
 
 ];
